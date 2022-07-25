@@ -1,4 +1,4 @@
-package com.infy.utility;
+package com.barclays.utility;
 
 import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Aspect;
@@ -11,7 +11,7 @@ import org.apache.commons.logging.LogFactory;
 public class LoggingAspect {
 	public static final Log LOGGER = LogFactory.getLog(LoggingAspect.class);
 
-	@AfterThrowing(pointcut = "execution(* com.infy.service.*Impl.*(..))", throwing = "exception")
+	@AfterThrowing(pointcut = "execution(* com.barclays.service.*Impl.*(..))", throwing = "exception")
 	public void logServiceException(Exception exception) throws Exception {
 		LOGGER.error(exception.getMessage(), exception);
 	}
