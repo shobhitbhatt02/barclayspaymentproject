@@ -39,8 +39,17 @@ public class UserServiceImpl implements UserService {
 		User user = new User();
 		user.setLoginId(userDTO.getLoginId());
 		user.setPassword(userDTO.getPassword());
+		user.setRoleName(userDTO.getRoleName());
 		user.setLinkedAccountSequenceId(userDTO.getLinkedAccountSequenceId());
-		user.setRoleId(userDTO.getRoleId());
+		if(userDTO.getRoleName().equals("Bank_Manager"))
+		{
+			user.setRoleId(1);
+		}
+		else
+		{
+			user.setRoleId(2);
+		}
+		
 		User user2 = userRespository.save(user);
 		return user2.getLoginId();
 	}

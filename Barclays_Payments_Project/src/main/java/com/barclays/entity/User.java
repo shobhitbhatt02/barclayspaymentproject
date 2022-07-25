@@ -18,7 +18,7 @@ public class User {
 	private String password;
 	private String linkedAccountSequenceId;
 	private Integer roleId;
-	
+	private String role_name;
 	
 	public Integer getLoginId() {
 		return loginId;
@@ -45,9 +45,16 @@ public class User {
 		this.roleId = roleId;
 	}
 	
+	
+	public String getRoleName() {
+		return role_name;
+	}
+	public void setRoleName(String role_name) {
+		this.role_name = role_name;
+	}
 	@Override
 	public int hashCode() {
-		return Objects.hash(linkedAccountSequenceId, loginId, password, roleId);
+		return Objects.hash(linkedAccountSequenceId, loginId, password, role_name, roleId);
 	}
 	@Override
 	public boolean equals(Object obj) {
@@ -60,13 +67,12 @@ public class User {
 		User other = (User) obj;
 		return Objects.equals(linkedAccountSequenceId, other.linkedAccountSequenceId)
 				&& Objects.equals(loginId, other.loginId) && Objects.equals(password, other.password)
-				&& Objects.equals(roleId, other.roleId);
+				&& Objects.equals(role_name, other.role_name) && Objects.equals(roleId, other.roleId);
 	}
-	
 	@Override
 	public String toString() {
 		return "User [loginId=" + loginId + ", password=" + password + ", linkedAccountSequenceId="
-				+ linkedAccountSequenceId + ", roleId=" + roleId + "]";
+				+ linkedAccountSequenceId + ", roleId=" + roleId + ", role=" + role_name + "]";
 	}
 	
 	

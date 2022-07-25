@@ -14,11 +14,14 @@ public class UserDTO {
 
 	@NotNull(message = "{user.password.absent}")
 	private String password;
+	
+	@NotNull(message = "{user.role.absent}")
+	private String role_name;
 
 	@NotNull(message = "{user.sequence.absent}")
 	private String linkedAccountSequenceId;
 
-	@NotNull(message= "{user.roleId.absent")
+	
 	 private Integer roleId;
 	
 	public UserDTO() {
@@ -26,16 +29,18 @@ public class UserDTO {
 	}
 
 	public UserDTO(Integer loginId, @NotNull(message = "{user.password.absent}") String password,
+			@NotNull(message = "{user.role.absent}") String role_name,
 			@NotNull(message = "{user.sequence.absent}") String linkedAccountSequenceId,
 			@NotNull(message = "{user.roleId.absent") Integer roleId) {
 		super();
 		this.loginId = loginId;
 		this.password = password;
+		this.role_name = role_name;
 		this.linkedAccountSequenceId = linkedAccountSequenceId;
 		this.roleId = roleId;
 	}
-	
 
+	
 	public Integer getLoginId() {
 		return loginId;
 	}
@@ -50,6 +55,15 @@ public class UserDTO {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public String getRoleName() 
+	{
+		return role_name;
+	}
+
+	public void setRoleName(String role_name) {
+		this.role_name = role_name;
 	}
 
 	public String getLinkedAccountSequenceId() {
@@ -70,9 +84,10 @@ public class UserDTO {
 
 	@Override
 	public String toString() {
-		return "UserDTO [loginId=" + loginId + ", password=" + password + ", linkedAccountSequenceId="
-				+ linkedAccountSequenceId + ", roleId=" + roleId + "]";
+		return "UserDTO [loginId=" + loginId + ", password=" + password + ", role=" + role_name
+				+ ", linkedAccountSequenceId=" + linkedAccountSequenceId + ", roleId=" + roleId + "]";
 	}
 
+	
 	
 }
