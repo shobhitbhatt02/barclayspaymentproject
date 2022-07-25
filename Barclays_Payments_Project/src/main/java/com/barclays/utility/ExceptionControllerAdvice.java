@@ -1,4 +1,4 @@
-package com.infy.utility;
+package com.barclays.utility;
 
 import java.time.LocalDateTime;
 import java.util.stream.Collectors;
@@ -13,7 +13,7 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import com.infy.exception.InfyBankException;
+import com.barclays.exception.PaymentsException;
 
 
 @RestControllerAdvice
@@ -30,8 +30,8 @@ public class ExceptionControllerAdvice {
 		return new ResponseEntity<ErrorInfo>(error, HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 
-	@ExceptionHandler(InfyBankException.class)
-	public ResponseEntity<ErrorInfo> infyBankexceptionHandler(InfyBankException exception) {
+	@ExceptionHandler(PaymentsException.class)
+	public ResponseEntity<ErrorInfo> infyBankexceptionHandler(PaymentsException exception) {
 		ErrorInfo error = new ErrorInfo();
 		error.setErrorMessage(environment.getProperty(exception.getMessage()));
 		error.setTimestamp(LocalDateTime.now());
