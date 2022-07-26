@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.barclays.dto.AccountTransactionDTO;
 import com.barclays.dto.BillsDTO;
 import com.barclays.dto.RegisteredBillersDTO;
 import com.barclays.dto.UserDTO;
@@ -67,8 +68,18 @@ public class PaymentApi {
 	public ResponseEntity<String> generatebill(@RequestBody BillsDTO 
 			billsDTO)
 			throws PaymentsException {
-		System.out.println(billsDTO);
+		
 		Integer id= userService.generateBill(billsDTO );
+		String successMessage = environment.getProperty("API.GENERATE_BILL")+ id;
+		return new ResponseEntity<>(successMessage, HttpStatus.OK);
+	}	
+	
+	@PostMapping(value = "/manualPayment/{sequenceId}")
+	public ResponseEntity<String> manualPay(@PathVariable Integer sequenceId,@RequestBody AccountTransactionDTO 
+			accountTransactionDTO)
+			throws PaymentsException {
+		
+		Integer id= userService.manualPay(sequenceId,accountTransactionDTO );
 		String successMessage = environment.getProperty("API.GENERATE_BILL")+ id;
 		return new ResponseEntity<>(successMessage, HttpStatus.OK);
 	}	

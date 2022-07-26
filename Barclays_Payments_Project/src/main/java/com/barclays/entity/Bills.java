@@ -2,10 +2,13 @@ package com.barclays.entity;
 
 import java.time.LocalDate;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 
 import org.hibernate.annotations.ColumnDefault;
 
@@ -22,6 +25,9 @@ public class  Bills {
 	private Integer amount;
 	private String dueDate;
 	private String status;
+//	@OneToOne(cascade = CascadeType.ALL)
+//	@JoinColumn(name = "billSequenceId", unique = true)
+//	private Accounts_Transaction accounts_Transaction;
 	
 	public Integer getBillSequenceId() {
 		return billSequenceId;

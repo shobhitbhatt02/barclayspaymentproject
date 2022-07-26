@@ -15,7 +15,7 @@ public class Accounts {
 	private String accountNo;
 	private String name;
 	private String email;
-	private String currentBalance;
+	private Long currentBalance;
 	
 	public Integer getSequenceId() {
 		return sequenceId;
@@ -41,10 +41,10 @@ public class Accounts {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getCurrentBalance() {
+	public Long getCurrentBalance() {
 		return currentBalance;
 	}
-	public void setCurrentBalance(String currentBalance) {
+	public void setCurrentBalance(Long currentBalance) {
 		this.currentBalance = currentBalance;
 	}
 	@Override

@@ -10,13 +10,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.barclays.dto.AccountTransactionDTO;
 import com.barclays.dto.BillsDTO;
 import com.barclays.dto.RegisteredBillersDTO;
 import com.barclays.dto.UserDTO;
+import com.barclays.entity.Accounts;
+import com.barclays.entity.Accounts_Transaction;
 import com.barclays.entity.Bills;
 import com.barclays.entity.RegisteredBillers;
 import com.barclays.entity.User;
 import com.barclays.exception.PaymentsException;
+import com.barclays.repository.AccountTransactionRepository;
+import com.barclays.repository.AccountsRepository;
 import com.barclays.repository.BillsRepository;
 import com.barclays.repository.RegisteredBillersRepository;
 import com.barclays.repository.UserRespository;
@@ -33,6 +38,12 @@ public class UserServiceImpl implements UserService {
 	
 	@Autowired
 	private BillsRepository billsRepository;
+	
+	@Autowired
+	private AccountTransactionRepository accountTransactionRepository;
+	
+	@Autowired
+	private AccountsRepository accountsRepository;
 	
 	@Override
 	public UserDTO getUser(Integer userId) throws PaymentsException {
@@ -193,4 +204,33 @@ public class UserServiceImpl implements UserService {
 		return bill2.getBillSequenceId();
 	}
 
+	
+	//Manual Payment by account Holder
+	@Override
+	public Integer manualPay(Integer SequenceId,AccountTransactionDTO accountTransactionDTO) throws PaymentsException {
+		Accounts_Transaction accountTrans = new Accounts_Transaction();
+		accountTrans.setAmount(accountTransactionDTO.getAmount());
+		accountTrans.setDate(LocalDate.now());
+		accountTrans.setBill_ref_num(accountTransactionDTO.getBill_ref_num());
+		accountTrans.setSequence_id(SequenceId);
+		accountTrans.setTransaction_type("Debit");
+		accountTrans.setDescription(accountTransactionDTO.getDescription());
+		
+		
+		
+		Accounts_Transaction accountTrans2 = accountTransactionRepository.save(accountTrans);
+		Optional<Accounts> accounts= accountsRepository.findById(SequenceId);
+		Accounts a = accounts.orElseThrow(() -> new PaymentsException("Service.USER_NOT_FOUND"));
+		a.setCurrentBalance(a.getCurrentBalance()- accountTrans2.getAmount());
+		
+		Optional<Bills> bill= billsRepository.findById(accountTrans2.getBill_ref_num());
+		
+		Bills b= bill.orElseThrow(() -> new PaymentsException("Service.USER_NOT_FOUND"));
+		
+		b.setStatus("Completed");
+		return accountTrans2.getBill_ref_num();
+	}
+
+	
+	
 }

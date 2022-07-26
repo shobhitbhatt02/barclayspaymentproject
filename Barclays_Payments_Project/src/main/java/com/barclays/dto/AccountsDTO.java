@@ -7,13 +7,13 @@ public class AccountsDTO {
 	private String accountNo;
 	private String name;
 	private String email;
-	private String currentBalance;
+	private Long currentBalance;
 	
 	public AccountsDTO()
 	{
 		
 	}
-	public AccountsDTO(Integer sequenceId, String accountNo, String name, String email, String currentBalance) {
+	public AccountsDTO(Integer sequenceId, String accountNo, String name, String email, Long currentBalance) {
 		super();
 		this.sequenceId = sequenceId;
 		this.accountNo = accountNo;
@@ -45,10 +45,10 @@ public class AccountsDTO {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getCurrentBalance() {
+	public Long getCurrentBalance() {
 		return currentBalance;
 	}
-	public void setCurrentBalance(String currentBalance) {
+	public void setCurrentBalance(Long currentBalance) {
 		this.currentBalance = currentBalance;
 	}
 	@Override
