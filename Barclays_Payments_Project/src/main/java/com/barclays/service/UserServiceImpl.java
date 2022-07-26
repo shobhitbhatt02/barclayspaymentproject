@@ -1,5 +1,7 @@
 package com.barclays.service;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -8,11 +10,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.barclays.dto.BillsDTO;
 import com.barclays.dto.RegisteredBillersDTO;
 import com.barclays.dto.UserDTO;
+import com.barclays.entity.Bills;
 import com.barclays.entity.RegisteredBillers;
 import com.barclays.entity.User;
 import com.barclays.exception.PaymentsException;
+import com.barclays.repository.BillsRepository;
 import com.barclays.repository.RegisteredBillersRepository;
 import com.barclays.repository.UserRespository;
 
@@ -25,6 +30,9 @@ public class UserServiceImpl implements UserService {
 
 	@Autowired
 	private RegisteredBillersRepository registeredBillersRepository;
+	
+	@Autowired
+	private BillsRepository billsRepository;
 	
 	@Override
 	public UserDTO getUser(Integer userId) throws PaymentsException {
@@ -169,6 +177,20 @@ public class UserServiceImpl implements UserService {
 		register.orElseThrow(() -> new PaymentsException("Service.BILLER_NOT_FOUND"));
 		registeredBillersRepository.deleteById(billerSequenceId);
 		
+	}
+//bill generation by manager
+	@Override
+	public Integer generateBill(BillsDTO billsDTO) {
+		Bills bill = new Bills();
+		
+		bill.setAmount(billsDTO.getAmount());
+		bill.setBillerCode(billsDTO.getBillerCode());
+		bill.setConsumerNumber(billsDTO.getConsumerNumber());
+		bill.setDueDate(billsDTO.getDueDate());
+		bill.setStatus(billsDTO.getStatus());
+		
+		Bills bill2 = billsRepository.save(bill); //persisting data in database
+		return bill2.getBillSequenceId();
 	}
 
 }

@@ -1,25 +1,29 @@
 package com.barclays.dto;
 
+import java.time.LocalDate;
+
 public class BillsDTO {
 	
 	private Integer billSequenceId;
 	private Integer billerCode;
 	private String consumerNumber;
 	private Integer amount;
-	private Integer dueDate;
+	private String dueDate;
+	private String status;
 	
 	
 	public BillsDTO() {
 		
 	}
 	public BillsDTO(Integer billSequenceId, Integer billerCode, String consumerNumber, Integer amount,
-			Integer dueDate ) {
+			String dueDate, String status ) {
 		super();
 		this.billSequenceId = billSequenceId;
 		this.billerCode = billerCode;
 		this.consumerNumber = consumerNumber;
 		this.amount = amount;
 		this.dueDate = dueDate;
+		this.status= status;
 	}
 	public Integer getBillSequenceId() {
 		return billSequenceId;
@@ -39,16 +43,16 @@ public class BillsDTO {
 	public void setConsumerNumber(String consumerNumber) {
 		this.consumerNumber = consumerNumber;
 	}
-	public Integer getamount() {
+	public Integer getAmount() {
 		return amount;
 	}
 	public void setSequenceId(Integer amount) {
 		this.amount = amount;
 	}
-	public Integer getdueDate() {
+	public String getDueDate() {
 		return dueDate;
 	}
-	public void setAutopay(Integer dueDate) {
+	public void setDueDate(String dueDate) {
 		this.dueDate = dueDate;
 	}
 	
@@ -56,7 +60,13 @@ public class BillsDTO {
 	public String toString() {
 		return "Bills [billSequenceId=" + billSequenceId + ", billerCode=" + billerCode
 				+ ", consumerNumber=" + consumerNumber + ", amount=" + amount + ", dueDate=" + dueDate
-				+"]";
+				+", status="+status+"]";
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 	
 	

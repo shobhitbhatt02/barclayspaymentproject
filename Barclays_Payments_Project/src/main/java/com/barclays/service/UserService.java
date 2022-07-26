@@ -2,6 +2,7 @@ package com.barclays.service;
 
 import java.util.List;
 
+import com.barclays.dto.BillsDTO;
 import com.barclays.dto.RegisteredBillersDTO;
 import com.barclays.dto.UserDTO;
 import com.barclays.exception.PaymentsException;
@@ -22,5 +23,7 @@ public interface UserService {
 
 	public List<RegisteredBillersDTO> getBillers(Integer sequenceId) throws PaymentsException;
 	public void deleteBiller(Integer billerSequenceId)throws PaymentsException;
+	
+	public Integer generateBill(BillsDTO billsDTO);
 	
 }

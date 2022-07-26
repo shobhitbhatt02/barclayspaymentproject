@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.barclays.dto.BillsDTO;
 import com.barclays.dto.RegisteredBillersDTO;
 import com.barclays.dto.UserDTO;
 import com.barclays.exception.PaymentsException;
@@ -61,6 +62,16 @@ public class PaymentApi {
 		String successMessage = environment.getProperty("API.BILLER_DELETE_SUCCESS");
 		return new ResponseEntity<>(successMessage, HttpStatus.OK);
 	}
+	
+	@PostMapping(value = "/generateBill")
+	public ResponseEntity<String> generatebill(@RequestBody BillsDTO 
+			billsDTO)
+			throws PaymentsException {
+		System.out.println(billsDTO);
+		Integer id= userService.generateBill(billsDTO );
+		String successMessage = environment.getProperty("API.GENERATE_BILL")+ id;
+		return new ResponseEntity<>(successMessage, HttpStatus.OK);
+	}	
 	
 	
 	
