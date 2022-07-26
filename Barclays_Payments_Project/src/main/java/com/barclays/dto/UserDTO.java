@@ -15,10 +15,10 @@ public class UserDTO {
 	@NotNull(message = "{user.password.absent}")
 	private String password;
 	
-	@NotNull(message = "{user.role.absent}")
+	
 	private String role_name;
 
-	@NotNull(message = "{user.sequence.absent}")
+	
 	private String linkedAccountSequenceId;
 
 	

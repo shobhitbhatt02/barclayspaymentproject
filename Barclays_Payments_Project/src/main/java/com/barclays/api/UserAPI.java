@@ -56,6 +56,13 @@ public class UserAPI {
 		return new ResponseEntity<>(successMessage, HttpStatus.CREATED);
 	}
 
+	@PostMapping(value = "/login")
+	public ResponseEntity<String> lgoinUser(@Valid @RequestBody UserDTO user) throws PaymentsException {
+		Integer loginId = userService.loginUser(user);
+		String successMessage = environment.getProperty("API.LOGGED_IN") + loginId;
+		return new ResponseEntity<>(successMessage, HttpStatus.CREATED);
+	}
+
 //	@PutMapping(value = "/users/{userId}")
 //	public ResponseEntity<String> updateuser(@PathVariable Integer userId, @RequestBody UserDTO user)
 //			throws PaymentsException {
@@ -70,4 +77,15 @@ public class UserAPI {
 		String successMessage = environment.getProperty("API.DELETE_SUCCESS");
 		return new ResponseEntity<>(successMessage, HttpStatus.OK);
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

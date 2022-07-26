@@ -31,7 +31,7 @@ public class ExceptionControllerAdvice {
 	}
 
 	@ExceptionHandler(PaymentsException.class)
-	public ResponseEntity<ErrorInfo> infyBankexceptionHandler(PaymentsException exception) {
+	public ResponseEntity<ErrorInfo> barclaysexceptionHandler(PaymentsException exception) {
 		ErrorInfo error = new ErrorInfo();
 		error.setErrorMessage(environment.getProperty(exception.getMessage()));
 		error.setTimestamp(LocalDateTime.now());

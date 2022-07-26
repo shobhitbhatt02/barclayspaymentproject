@@ -8,9 +8,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.barclays.dto.RegisteredBillersDTO;
 import com.barclays.dto.UserDTO;
+import com.barclays.entity.RegisteredBillers;
 import com.barclays.entity.User;
 import com.barclays.exception.PaymentsException;
+import com.barclays.repository.RegisteredBillersRepository;
 import com.barclays.repository.UserRespository;
 
 @Service(value = "userService")
@@ -20,6 +23,9 @@ public class UserServiceImpl implements UserService {
 	@Autowired
 	private UserRespository userRespository;
 
+	@Autowired
+	private RegisteredBillersRepository registeredBillersRepository;
+	
 	@Override
 	public UserDTO getUser(Integer userId) throws PaymentsException {
 		Optional<User> optional = userRespository.findById(userId);
@@ -83,6 +89,86 @@ public class UserServiceImpl implements UserService {
 		if (userDTOs.isEmpty())
 			throw new PaymentsException("Service.USERS_NOT_FOUND");
 		return userDTOs;
+	}
+
+	@Override
+	public Integer loginUser(UserDTO UserDTO) throws PaymentsException {
+		Optional<User> optional = userRespository.findById(UserDTO.getLoginId());
+		User user = optional.orElseThrow(() -> new PaymentsException("Service.USERS_NOT_FOUND"));
+		if(user.getPassword().equals(UserDTO.getPassword()))
+		{
+			return user.getLoginId();
+		}
+		else
+		{
+			throw new PaymentsException("Service.INCORRECT");
+		}
+	}
+
+	@Override
+	public Integer registerBiller(Integer SequenceId,RegisteredBillersDTO registerBillerDTO) throws PaymentsException {
+		
+		RegisteredBillers registerBiller = new RegisteredBillers();
+		
+		registerBiller.setBillerCode(registerBillerDTO.getBillerCode());
+		registerBiller.setConsumerNumber(registerBillerDTO.getConsumerNumber());
+		registerBiller.setSequenceId(SequenceId);
+		registerBiller.setAutopay(registerBillerDTO.getAutopay());
+		registerBiller.setAutopayLimit(registerBillerDTO.getAutopayLimit());
+		
+		RegisteredBillers biller2 = registeredBillersRepository.save(registerBiller);//PERSISTING IN DATABASE
+		return biller2.getBillerSequenceId();
+		
+	}
+
+	@Override
+	public List<RegisteredBillersDTO> getAllBillers() throws PaymentsException {
+	
+		Iterable<RegisteredBillers> billers = registeredBillersRepository.findAll();
+		List<RegisteredBillersDTO> registeredBillersDTOs = new ArrayList<>();
+		billers.forEach(biller -> {
+			RegisteredBillersDTO rb = new RegisteredBillersDTO();
+			rb.setAutopay(biller.getAutopay());
+			rb.setAutopayLimit(biller.getAutopayLimit());
+			rb.setBillerCode(biller.getBillerCode());
+			rb.setBillerSequenceId(biller.getBillerSequenceId());
+			rb.setConsumerNumber(biller.getConsumerNumber());
+			rb.setSequenceId(biller.getSequenceId());
+			registeredBillersDTOs.add(rb);
+		});
+		if (registeredBillersDTOs.isEmpty())
+			throw new PaymentsException("Service.BILLER_NOT_FOUND");
+		return registeredBillersDTOs;
+	}
+
+	@Override
+	public List<RegisteredBillersDTO> getBillers(Integer sequenceId) throws PaymentsException {
+	
+		Iterable<RegisteredBillers> billers = registeredBillersRepository.findBySequenceId(sequenceId);
+		List<RegisteredBillersDTO> registeredBillersDTOs = new ArrayList<>();
+		
+		billers.forEach(biller -> {
+			RegisteredBillersDTO rb = new RegisteredBillersDTO();
+			rb.setAutopay(biller.getAutopay());
+			rb.setAutopayLimit(biller.getAutopayLimit());
+			rb.setBillerCode(biller.getBillerCode());
+			rb.setBillerSequenceId(biller.getBillerSequenceId());
+			rb.setConsumerNumber(biller.getConsumerNumber());
+			rb.setSequenceId(biller.getSequenceId());
+			registeredBillersDTOs.add(rb);
+		});
+		if (registeredBillersDTOs.isEmpty())
+			throw new PaymentsException("Service.BILLER_NOT_FOUND");
+		return registeredBillersDTOs;
+	}
+
+	@Override
+	public void deleteBiller(Integer billerSequenceId) throws PaymentsException {
+		
+		Optional<RegisteredBillers> register= registeredBillersRepository.findById(billerSequenceId);
+		register.orElseThrow(() -> new PaymentsException("Service.BILLER_NOT_FOUND"));
+		registeredBillersRepository.deleteById(billerSequenceId);
+		
 	}
 
 }
