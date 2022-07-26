@@ -73,6 +73,18 @@ public class PaymentApi {
 		String successMessage = environment.getProperty("API.GENERATE_BILL")+ id;
 		return new ResponseEntity<>(successMessage, HttpStatus.OK);
 	}	
+	//shows bills for the biller
+	@GetMapping(value ="/getBills/{billerCode}")
+	public ResponseEntity<List<String>> getbills(@PathVariable Integer billerCode) throws PaymentsException {
+		List<String> billList = userService.getBills(billerCode);
+		return new ResponseEntity<>(billList, HttpStatus.OK);
+	}
+	//get all bills of billers
+	@GetMapping(value ="/getallBills")
+	public ResponseEntity<List<String>> getallbills() throws PaymentsException {
+		List<String> billList = userService.getAllBills();
+		return new ResponseEntity<>(billList, HttpStatus.OK);
+	}
 	
 	@PostMapping(value = "/manualPayment/{sequenceId}")
 	public ResponseEntity<String> manualPay(@PathVariable Integer sequenceId,@RequestBody AccountTransactionDTO 

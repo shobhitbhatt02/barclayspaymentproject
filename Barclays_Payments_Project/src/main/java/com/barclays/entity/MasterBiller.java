@@ -12,9 +12,8 @@ public class  MasterBiller {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer billerName;
 	private Integer billerCode;
-	
+	private Integer billerName;
 	
 	public Integer getBillerName() {
 		return billerName;

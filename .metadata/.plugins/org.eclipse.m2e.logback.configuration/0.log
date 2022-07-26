@@ -1302,3 +1302,329 @@ Caused by: java.nio.file.NoSuchFileException: C:\Users\Win\Documents\GitHub\barc
 2022-07-26 14:27:09,973 [Worker-123: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-07-26 14:27:09,973 [Worker-123: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2022-07-26 14:27:09,973 [Worker-123: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 14:37:33,643 [Worker-129: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 14:37:33,643 [Worker-129: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 14:37:33,644 [Worker-129: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 14:37:33,667 [Worker-129: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 14:37:33,672 [Worker-129: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 14:37:33,672 [Worker-129: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 14:37:33,672 [Worker-129: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 14:42:14,033 [Worker-126: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 14:42:14,033 [Worker-126: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 14:42:14,034 [Worker-126: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 14:42:14,045 [Worker-126: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 14:42:14,048 [Worker-126: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 14:42:14,049 [Worker-126: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 14:42:14,049 [Worker-126: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 15:10:31,339 [Worker-141: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 15:10:31,340 [Worker-141: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 15:10:31,341 [Worker-141: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 15:10:31,356 [Worker-141: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 15:10:31,361 [Worker-141: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 15:10:31,361 [Worker-141: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 15:10:31,361 [Worker-141: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 15:11:55,253 [Worker-140: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 15:11:55,253 [Worker-140: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 15:11:55,255 [Worker-140: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 15:11:55,289 [Worker-140: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 15:11:55,292 [Worker-140: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 15:11:55,292 [Worker-140: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 15:11:55,292 [Worker-140: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 15:22:11,307 [Worker-144: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 15:22:11,307 [Worker-144: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 15:22:11,308 [Worker-144: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 15:22:11,318 [Worker-144: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 15:22:11,322 [Worker-144: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 15:22:11,322 [Worker-144: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 15:22:11,322 [Worker-144: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 15:29:17,405 [Worker-149: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 15:29:17,405 [Worker-149: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 15:29:17,406 [Worker-149: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 15:29:17,414 [Worker-149: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 15:29:17,418 [Worker-149: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 15:29:17,418 [Worker-149: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 15:29:17,418 [Worker-149: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 15:31:06,823 [Worker-151: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 15:31:06,823 [Worker-151: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 15:31:06,824 [Worker-151: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 15:31:06,832 [Worker-151: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 15:31:06,835 [Worker-151: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 15:31:06,835 [Worker-151: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 15:31:06,835 [Worker-151: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 15:50:13,499 [Worker-158: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 15:50:13,500 [Worker-158: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 15:50:13,501 [Worker-158: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 15:50:13,522 [Worker-158: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 15:50:13,526 [Worker-158: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 15:50:13,526 [Worker-158: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 15:50:13,526 [Worker-158: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 15:52:58,109 [Worker-148: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 15:52:58,110 [Worker-148: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 15:52:58,110 [Worker-148: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 15:52:58,118 [Worker-148: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 15:52:58,121 [Worker-148: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 15:52:58,121 [Worker-148: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 15:52:58,121 [Worker-148: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 15:53:08,961 [Worker-158: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 15:53:08,961 [Worker-158: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 15:53:08,962 [Worker-158: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 15:53:08,980 [Worker-158: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 15:53:08,982 [Worker-158: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 15:53:08,982 [Worker-158: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 15:53:08,982 [Worker-158: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 15:55:33,003 [Worker-158: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 15:55:33,003 [Worker-158: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 15:55:33,004 [Worker-158: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 15:55:33,013 [Worker-158: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 15:55:33,017 [Worker-158: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 15:55:33,017 [Worker-158: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 15:55:33,017 [Worker-158: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 15:55:34,751 [Worker-160: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 15:55:34,751 [Worker-160: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 15:55:34,752 [Worker-160: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 15:55:34,768 [Worker-160: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 15:55:34,772 [Worker-160: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 15:55:34,772 [Worker-160: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 15:55:34,773 [Worker-160: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 15:56:02,277 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 15:56:02,277 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 15:56:02,278 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 15:56:02,304 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 15:56:02,307 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 15:56:02,307 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 15:56:02,307 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:02:04,049 [Worker-161: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:02:04,049 [Worker-161: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:02:04,049 [Worker-161: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:02:04,055 [Worker-161: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:02:04,057 [Worker-161: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:02:04,057 [Worker-161: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:02:04,057 [Worker-161: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:07:25,061 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:07:25,061 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:07:25,062 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:07:25,071 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:07:25,074 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:07:25,074 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:07:25,074 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:07:45,640 [Worker-163: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:07:45,641 [Worker-163: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:07:45,641 [Worker-163: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:07:45,651 [Worker-163: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:07:45,654 [Worker-163: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:07:45,655 [Worker-163: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:07:45,655 [Worker-163: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:08:17,581 [Worker-162: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:08:17,581 [Worker-162: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:08:17,582 [Worker-162: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:08:17,590 [Worker-162: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:08:17,593 [Worker-162: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:08:17,593 [Worker-162: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:08:17,593 [Worker-162: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:09:15,360 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:09:15,360 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:09:15,360 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:09:15,368 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:09:15,370 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:09:15,371 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:09:15,371 [Worker-159: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:11:17,278 [Worker-164: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:11:17,278 [Worker-164: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:11:17,279 [Worker-164: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:11:17,287 [Worker-164: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:11:17,290 [Worker-164: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:11:17,291 [Worker-164: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:11:17,291 [Worker-164: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:11:47,201 [Worker-163: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:11:47,201 [Worker-163: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:11:47,202 [Worker-163: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:11:47,210 [Worker-163: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:11:47,214 [Worker-163: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:11:47,214 [Worker-163: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:11:47,214 [Worker-163: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:14:47,813 [Worker-119: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:14:47,813 [Worker-119: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:14:47,814 [Worker-119: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:14:47,822 [Worker-119: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:14:47,824 [Worker-119: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:14:47,824 [Worker-119: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:14:47,825 [Worker-119: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:16:10,894 [Worker-162: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:16:10,895 [Worker-162: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:16:10,895 [Worker-162: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:16:10,903 [Worker-162: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:16:10,905 [Worker-162: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:16:10,905 [Worker-162: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:16:10,906 [Worker-162: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:30:00,076 [Worker-167: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Demo_SpringREST_Validation_02:Demo02_SpringREST_Validation:0.0.1-SNAPSHOT @ C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\pom.xml.
+2022-07-26 16:30:03,527 [Worker-167: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:30:03,527 [Worker-167: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:30:03,532 [Worker-167: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:30:03,560 [Worker-167: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:30:03,563 [Worker-167: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:30:03,564 [Worker-167: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:30:03,564 [Worker-167: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:30:04,114 [Worker-162: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/net/sf/supercsv/super-csv/2.4.0/super-csv-2.4.0-sources.jar
+2022-07-26 16:30:04,771 [Worker-162: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/net/sf/supercsv/super-csv/2.4.0/super-csv-2.4.0-sources.jar
+2022-07-26 16:30:04,910 [Worker-164: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:30:04,910 [Worker-164: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:30:04,912 [Worker-164: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:30:04,917 [Worker-164: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:30:04,929 [Worker-164: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:30:04,929 [Worker-164: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:30:04,929 [Worker-164: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:30:05,119 [Worker-162: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for net.sf.supercsv:super-csv:2.4.0
+2022-07-26 16:30:05,962 [Worker-168: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:30:05,962 [Worker-168: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:30:05,962 [Worker-168: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-26 16:30:05,963 [Worker-168: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-26 16:30:05,965 [Worker-168: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:30:05,965 [Worker-168: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:30:05,965 [Worker-168: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:33:45,744 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:33:45,744 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:33:45,745 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:33:45,755 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:33:45,758 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:33:45,758 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:33:45,758 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:34:15,637 [Worker-171: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:34:15,638 [Worker-171: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:34:15,638 [Worker-171: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:34:15,646 [Worker-171: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:34:15,650 [Worker-171: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:34:15,650 [Worker-171: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:34:15,650 [Worker-171: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:34:44,196 [Worker-169: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:34:44,196 [Worker-169: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:34:44,197 [Worker-169: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:34:44,212 [Worker-169: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:34:44,216 [Worker-169: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:34:44,216 [Worker-169: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:34:44,216 [Worker-169: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:35:00,461 [Worker-167: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:35:00,461 [Worker-167: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:35:00,462 [Worker-167: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:35:00,471 [Worker-167: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:35:00,474 [Worker-167: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:35:00,474 [Worker-167: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:35:00,474 [Worker-167: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:42:54,724 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:42:54,724 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:42:54,725 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:42:54,733 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:42:54,738 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:42:54,738 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:42:54,738 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:45:56,879 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:45:56,879 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:45:56,880 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:45:56,888 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:45:56,891 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:45:56,891 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:45:56,891 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:46:33,131 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:46:33,132 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:46:33,132 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:46:33,141 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:46:33,144 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:46:33,144 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:46:33,144 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:46:37,680 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:46:37,680 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:46:37,681 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:46:37,688 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:46:37,691 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:46:37,691 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:46:37,691 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:47:15,681 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:47:15,681 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:47:15,681 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:47:15,689 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:47:15,692 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:47:15,692 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:47:15,692 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:49:14,780 [Worker-169: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:49:14,780 [Worker-169: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:49:14,781 [Worker-169: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:49:14,789 [Worker-169: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:49:14,792 [Worker-169: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:49:14,792 [Worker-169: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:49:14,792 [Worker-169: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:49:55,027 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:49:55,028 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:49:55,028 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:49:55,037 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:49:55,040 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:49:55,040 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:49:55,040 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:51:39,315 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:51:39,315 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:51:39,316 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:51:39,325 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:51:39,329 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:51:39,329 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:51:39,329 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:51:46,863 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:51:46,863 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:51:46,863 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:51:46,870 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:51:46,873 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:51:46,873 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:51:46,873 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:52:34,900 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:52:34,900 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:52:34,901 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:52:34,910 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:52:34,913 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:52:34,913 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:52:34,914 [Worker-170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:53:36,249 [Worker-169: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:53:36,249 [Worker-169: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:53:36,250 [Worker-169: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:53:36,257 [Worker-169: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:53:36,259 [Worker-169: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:53:36,259 [Worker-169: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:53:36,259 [Worker-169: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:53:40,912 [Worker-173: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:53:40,912 [Worker-173: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:53:40,913 [Worker-173: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:53:40,919 [Worker-173: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:53:40,922 [Worker-173: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:53:40,923 [Worker-173: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:53:40,923 [Worker-173: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:54:03,192 [Worker-174: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:54:03,193 [Worker-174: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:54:03,193 [Worker-174: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:54:03,200 [Worker-174: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:54:03,201 [Worker-174: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:54:03,201 [Worker-174: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:54:03,201 [Worker-174: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:54:18,372 [Worker-173: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:54:18,373 [Worker-173: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:54:18,373 [Worker-173: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:54:18,385 [Worker-173: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:54:18,391 [Worker-173: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:54:18,391 [Worker-173: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:54:18,391 [Worker-173: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:55:21,672 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:55:21,672 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:55:21,673 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:55:21,682 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:55:21,686 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:55:21,686 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:55:21,686 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:56:07,349 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:56:07,349 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:56:07,349 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:56:07,356 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:56:07,358 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:56:07,359 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:56:07,359 [Worker-172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
+2022-07-26 16:56:54,286 [Worker-174: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:56:54,286 [Worker-174: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:56:54,287 [Worker-174: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-26 16:56:54,295 [Worker-174: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-07-26 16:56:54,299 [Worker-174: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-26 16:56:54,299 [Worker-174: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-07-26 16:56:54,299 [Worker-174: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Win\Documents\GitHub\barclayspaymentproject\Barclays_Payments_Project\src\test\resources
