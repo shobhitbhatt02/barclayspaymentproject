@@ -219,6 +219,7 @@ public class UserServiceImpl implements UserService {
 		
 		
 		Accounts_Transaction accountTrans2 = accountTransactionRepository.save(accountTrans);
+		//...................................................................................
 		Optional<Accounts> accounts= accountsRepository.findById(SequenceId);
 		Accounts a = accounts.orElseThrow(() -> new PaymentsException("Service.USER_NOT_FOUND"));
 		a.setCurrentBalance(a.getCurrentBalance()- accountTrans2.getAmount());
@@ -231,6 +232,72 @@ public class UserServiceImpl implements UserService {
 		return accountTrans2.getBill_ref_num();
 	}
 
+	@Override
+	public List<String> getBills(Integer billerCode) throws PaymentsException {
+		Iterable<Bills> billers = billsRepository.findByBillerCode(billerCode);
+		List<String> str = new ArrayList<>();
+		
+		billers.forEach(biller -> {
+			String st="";
+			if(biller.getStatus().equals("Completed"))
+			{
+				st=st+"BillSequenceId:"+biller.getBillSequenceId()
+				+" BillConsumerNumber:"+biller.getConsumerNumber()+" BillSequenceId"+biller.getBillSequenceId();
+				str.add(st);
+			}
+			
+		});
+		
+		
+		return str;
+	}
 	
+	@Override
+	public List<String> getAllBills() throws PaymentsException {
+		Iterable<Bills> billers = billsRepository.findAll();
+		List<String> str = new ArrayList<>();
+		
+		billers.forEach(biller -> {
+			String st="";
+			if(biller.getStatus().equals("Completed"))
+			{
+				st=st+"BillSequenceId : "+biller.getBillSequenceId()
+				+" BillConsumerNumber : "+biller.getConsumerNumber()+" BillAmount : "+biller.getAmount();
+				str.add(st);
+			}
+			
+		});
+		
+		
+		return str;
+	}
+
+	@Override
+	public List<Accounts_Transaction> listall() throws PaymentsException {
+		
+		Iterable<Accounts_Transaction> transactions = accountTransactionRepository.findAll();
+		List<Accounts_Transaction> trans = new ArrayList<>();
+		
+		transactions.forEach(tr -> {
+			Accounts_Transaction at = new Accounts_Transaction();
+			at.setAmount(tr.getAmount());
+			at.setBill_ref_num(tr.getBill_ref_num());
+			at.setDate(tr.getDate());
+			at.setDescription(tr.getDescription());
+			at.setSequence_id(tr.getSequence_id());
+			at.setTransaction_type(at.getTransaction_type());
+			
+			trans.add(at);
+		});
+		if (trans.isEmpty())
+			throw new PaymentsException("Service.BILLER_NOT_FOUND");
+		return trans;
+	}
+
 	
+		
+	
+
+
+
 }

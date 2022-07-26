@@ -73,6 +73,13 @@ public class Accounts_Transaction {
 	public void setTransaction_type(String transaction_type) {
 		this.transaction_type = transaction_type;
 	}
+	public Integer getTrans_ref_num() {
+		return trans_ref_num;
+	}
+	public void setTrans_ref_num(Integer trans_ref_num) {
+		this.trans_ref_num = trans_ref_num;
+	}
+
 	@Override
 	public String toString() {
 		return "Accounts_Transaction [trans_ref_num=" + trans_ref_num + ", sequence_id=" + sequence_id + ", date="

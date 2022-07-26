@@ -2,7 +2,7 @@ package com.barclays.dto;
 
 public class MasterBillerDTO {
 	
-	private Integer billerName;
+	private String billerName;
 	private Integer billerCode;
 	
 	
@@ -10,16 +10,16 @@ public class MasterBillerDTO {
 	public MasterBillerDTO() {
 		
 	}
-	public MasterBillerDTO(Integer billerName, Integer billerCode) {
+	public MasterBillerDTO(String billerName, Integer billerCode) {
 		super();
 		this.billerName = billerName;
 		this.billerCode = billerCode;
 		
 	}
-	public Integer getbillerName() {
+	public String getbillerName() {
 		return billerName;
 	}
-	public void setbillerName(Integer billerName) {
+	public void setbillerName(String billerName) {
 		this.billerName = billerName;
 	}
 	public Integer getBillerCode() {

@@ -6,6 +6,7 @@ import com.barclays.dto.AccountTransactionDTO;
 import com.barclays.dto.BillsDTO;
 import com.barclays.dto.RegisteredBillersDTO;
 import com.barclays.dto.UserDTO;
+import com.barclays.entity.Accounts_Transaction;
 import com.barclays.exception.PaymentsException;
 
 
@@ -28,5 +29,12 @@ public interface UserService {
 	public Integer generateBill(BillsDTO billsDTO) throws PaymentsException;
 	
 	public Integer manualPay(Integer sequenceId,AccountTransactionDTO accountTransactionDTO)throws PaymentsException;
+	
+	
+	public List<String> getBills(Integer billerCode) throws PaymentsException;
+	
+	public List<String> getAllBills() throws PaymentsException;
+	
+	public List<Accounts_Transaction> listall() throws PaymentsException;
 	
 }
