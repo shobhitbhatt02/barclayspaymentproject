@@ -1,14 +1,26 @@
 package com.barclays.service;
 
+import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.supercsv.io.CsvBeanWriter;
+import org.supercsv.io.ICsvBeanWriter;
+import org.supercsv.prefs.CsvPreference;
 
 import com.barclays.dto.AccountTransactionDTO;
 import com.barclays.dto.BillsDTO;
@@ -17,6 +29,7 @@ import com.barclays.dto.UserDTO;
 import com.barclays.entity.Accounts;
 import com.barclays.entity.Accounts_Transaction;
 import com.barclays.entity.Bills;
+import com.barclays.entity.EmailDetails;
 import com.barclays.entity.RegisteredBillers;
 import com.barclays.entity.User;
 import com.barclays.exception.PaymentsException;
@@ -29,6 +42,9 @@ import com.barclays.repository.UserRespository;
 @Service(value = "userService")
 @Transactional
 public class UserServiceImpl implements UserService {
+	
+	@Autowired
+	private Environment environment;
 
 	@Autowired
 	private UserRespository userRespository;
@@ -44,6 +60,9 @@ public class UserServiceImpl implements UserService {
 	
 	@Autowired
 	private AccountsRepository accountsRepository;
+	
+	@Autowired
+	private EmailService emailService;
 	
 	@Override
 	public UserDTO getUser(Integer userId) throws PaymentsException {
@@ -111,12 +130,15 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public Integer loginUser(UserDTO UserDTO) throws PaymentsException {
+	public ResponseEntity<String> loginUser(UserDTO UserDTO) throws PaymentsException {
 		Optional<User> optional = userRespository.findById(UserDTO.getLoginId());
 		User user = optional.orElseThrow(() -> new PaymentsException("Service.USERS_NOT_FOUND"));
 		if(user.getPassword().equals(UserDTO.getPassword()))
 		{
-			return user.getLoginId();
+			String successMessage = environment.getProperty("API.LOGGED_IN") + user.getLoginId()+
+					"AS"+user.getRoleName();
+			return new ResponseEntity<>(successMessage, HttpStatus.CREATED);
+			
 		}
 		else
 		{
@@ -125,30 +147,30 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public Integer registerBiller(Integer SequenceId,RegisteredBillersDTO registerBillerDTO) throws PaymentsException {
+	public ResponseEntity<String> registerBiller(Integer SequenceId,RegisteredBillersDTO registerBillerDTO) throws PaymentsException {
 		
 		RegisteredBillers registerBiller = new RegisteredBillers();
 		
 		registerBiller.setBillerCode(registerBillerDTO.getBillerCode());
 		registerBiller.setConsumerNumber(registerBillerDTO.getConsumerNumber());
 		registerBiller.setSequenceId(SequenceId);
-		registerBiller.setAutopay(registerBillerDTO.getAutopay());
-		registerBiller.setAutopayLimit(registerBillerDTO.getAutopayLimit());
+		
 		
 		RegisteredBillers biller2 = registeredBillersRepository.save(registerBiller);//PERSISTING IN DATABASE
-		return biller2.getBillerSequenceId();
+		
+		String successMessage = environment.getProperty("API.REGISTERED_BILLER");
+		return new ResponseEntity<>(successMessage, HttpStatus.OK);
 		
 	}
 
 	@Override
-	public List<RegisteredBillersDTO> getAllBillers() throws PaymentsException {
+	public ResponseEntity<List<RegisteredBillersDTO>> getAllBillers() throws PaymentsException {
 	
 		Iterable<RegisteredBillers> billers = registeredBillersRepository.findAll();
 		List<RegisteredBillersDTO> registeredBillersDTOs = new ArrayList<>();
 		billers.forEach(biller -> {
 			RegisteredBillersDTO rb = new RegisteredBillersDTO();
-			rb.setAutopay(biller.getAutopay());
-			rb.setAutopayLimit(biller.getAutopayLimit());
+			
 			rb.setBillerCode(biller.getBillerCode());
 			rb.setBillerSequenceId(biller.getBillerSequenceId());
 			rb.setConsumerNumber(biller.getConsumerNumber());
@@ -157,19 +179,19 @@ public class UserServiceImpl implements UserService {
 		});
 		if (registeredBillersDTOs.isEmpty())
 			throw new PaymentsException("Service.BILLER_NOT_FOUND");
-		return registeredBillersDTOs;
+		
+		return new ResponseEntity<>(registeredBillersDTOs, HttpStatus.OK);
 	}
 
 	@Override
-	public List<RegisteredBillersDTO> getBillers(Integer sequenceId) throws PaymentsException {
+	public ResponseEntity<List<RegisteredBillersDTO>> getBillers(Integer sequenceId) throws PaymentsException {
 	
 		Iterable<RegisteredBillers> billers = registeredBillersRepository.findBySequenceId(sequenceId);
 		List<RegisteredBillersDTO> registeredBillersDTOs = new ArrayList<>();
 		
 		billers.forEach(biller -> {
 			RegisteredBillersDTO rb = new RegisteredBillersDTO();
-			rb.setAutopay(biller.getAutopay());
-			rb.setAutopayLimit(biller.getAutopayLimit());
+			
 			rb.setBillerCode(biller.getBillerCode());
 			rb.setBillerSequenceId(biller.getBillerSequenceId());
 			rb.setConsumerNumber(biller.getConsumerNumber());
@@ -178,20 +200,23 @@ public class UserServiceImpl implements UserService {
 		});
 		if (registeredBillersDTOs.isEmpty())
 			throw new PaymentsException("Service.BILLER_NOT_FOUND");
-		return registeredBillersDTOs;
+		return new ResponseEntity<>(registeredBillersDTOs, HttpStatus.OK);
+		
 	}
 
 	@Override
-	public void deleteBiller(Integer billerSequenceId) throws PaymentsException {
+	public ResponseEntity<String> deleteBiller(Integer billerSequenceId) throws PaymentsException {
 		
 		Optional<RegisteredBillers> register= registeredBillersRepository.findById(billerSequenceId);
 		register.orElseThrow(() -> new PaymentsException("Service.BILLER_NOT_FOUND"));
 		registeredBillersRepository.deleteById(billerSequenceId);
+		String successMessage = environment.getProperty("API.BILLER_DELETE_SUCCESS");
+		return new ResponseEntity<>(successMessage, HttpStatus.OK);
 		
 	}
 //bill generation by manager
 	@Override
-	public Integer generateBill(BillsDTO billsDTO) {
+	public ResponseEntity<String> generateBill(BillsDTO billsDTO) {
 		Bills bill = new Bills();
 		
 		bill.setAmount(billsDTO.getAmount());
@@ -201,13 +226,15 @@ public class UserServiceImpl implements UserService {
 		bill.setStatus(billsDTO.getStatus());
 		
 		Bills bill2 = billsRepository.save(bill); //persisting data in database
-		return bill2.getBillSequenceId();
+		String successMessage = environment.getProperty("API.GENERATE_BILL")+ bill2.getBillSequenceId();
+		return new ResponseEntity<>(successMessage, HttpStatus.OK);
+		
 	}
 
 	
 	//Manual Payment by account Holder
 	@Override
-	public Integer manualPay(Integer SequenceId,AccountTransactionDTO accountTransactionDTO) throws PaymentsException {
+	public ResponseEntity<String> manualPay(Integer SequenceId,AccountTransactionDTO accountTransactionDTO) throws PaymentsException {
 		Accounts_Transaction accountTrans = new Accounts_Transaction();
 		accountTrans.setAmount(accountTransactionDTO.getAmount());
 		accountTrans.setDate(LocalDate.now());
@@ -229,11 +256,20 @@ public class UserServiceImpl implements UserService {
 		Bills b= bill.orElseThrow(() -> new PaymentsException("Service.USER_NOT_FOUND"));
 		
 		b.setStatus("Completed");
-		return accountTrans2.getBill_ref_num();
+		
+		String successMessage = environment.getProperty("API.PAYMENT_SUCCESSFULL")+ accountTrans2.getBill_ref_num();;
+		
+		EmailDetails details=new EmailDetails();
+		details.setRecipient(a.getEmail());
+		details.setMsgBody("Payment Successful for Bill Number"+accountTrans2.getBill_ref_num());
+		details.setSubject("Payment Information");
+		emailService.sendSimpleMail(details);
+		return new ResponseEntity<>(successMessage, HttpStatus.OK);
+		
 	}
 
 	@Override
-	public List<String> getBills(Integer billerCode) throws PaymentsException {
+	public ResponseEntity<List<String>> getBills(Integer billerCode) throws PaymentsException {
 		Iterable<Bills> billers = billsRepository.findByBillerCode(billerCode);
 		List<String> str = new ArrayList<>();
 		
@@ -242,18 +278,17 @@ public class UserServiceImpl implements UserService {
 			if(biller.getStatus().equals("Completed"))
 			{
 				st=st+"BillSequenceId:"+biller.getBillSequenceId()
-				+" BillConsumerNumber:"+biller.getConsumerNumber()+" BillSequenceId"+biller.getBillSequenceId();
+				+" BillConsumerNumber:"+biller.getConsumerNumber()+" BillAmount : "+biller.getAmount();
 				str.add(st);
 			}
 			
 		});
 		
-		
-		return str;
+		return new ResponseEntity<>(str, HttpStatus.OK);
 	}
 	
 	@Override
-	public List<String> getAllBills() throws PaymentsException {
+	public ResponseEntity<List<String>> getAllBills() throws PaymentsException {
 		Iterable<Bills> billers = billsRepository.findAll();
 		List<String> str = new ArrayList<>();
 		
@@ -269,11 +304,11 @@ public class UserServiceImpl implements UserService {
 		});
 		
 		
-		return str;
+		return new ResponseEntity<>(str, HttpStatus.OK);
 	}
 
 	@Override
-	public List<Accounts_Transaction> listall() throws PaymentsException {
+	public void listall(HttpServletResponse response) throws IOException,PaymentsException {
 		
 		Iterable<Accounts_Transaction> transactions = accountTransactionRepository.findAll();
 		List<Accounts_Transaction> trans = new ArrayList<>();
@@ -291,7 +326,31 @@ public class UserServiceImpl implements UserService {
 		});
 		if (trans.isEmpty())
 			throw new PaymentsException("Service.BILLER_NOT_FOUND");
-		return trans;
+		
+		
+		
+		//...................
+		
+		DateFormat dateFormatter = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
+        String currentDateTime = dateFormatter.format(new Date());
+         
+        String headerKey = "Content-Disposition";
+        String headerValue = "attachment; filename=users_" + currentDateTime + ".csv";
+        response.setHeader(headerKey, headerValue);
+        response.reset();
+        ICsvBeanWriter csvWriter = new CsvBeanWriter(response.getWriter(), CsvPreference.STANDARD_PREFERENCE);
+        String[] csvHeader = {"Transaction Reference Number", "Amount", "Bill Reference Number", "Date", "Description"," SequenceId","Transaction Type"};
+        String[] nameMapping = {"trans_ref_num", "amount", "bill_ref_num", "date","description", "sequence_id","transaction_type"};
+         
+        csvWriter.writeHeader(csvHeader);
+         
+        for (Accounts_Transaction t : trans) {
+            csvWriter.write(t, nameMapping);
+        }
+         
+        csvWriter.close();
+		
+		
 	}
 
 	

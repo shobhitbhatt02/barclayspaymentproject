@@ -36,31 +36,30 @@ public class UserAPI {
 	@Autowired
 	private Environment environment;
 
-	@GetMapping(value = "/users")
-	public ResponseEntity<List<UserDTO>> getAllusers() throws PaymentsException {
-		List<UserDTO> userList = userService.getAllUsers();
-		return new ResponseEntity<>(userList, HttpStatus.OK);
-	}
+//	@GetMapping(value = "/users")
+//	public ResponseEntity<List<UserDTO>> getAllusers() throws PaymentsException {
+//		List<UserDTO> userList = userService.getAllUsers();
+//		return new ResponseEntity<>(userList, HttpStatus.OK);
+//	}
 
-	@GetMapping(value = "/users/{loginId}")
-	public ResponseEntity<UserDTO> getuserDetails(@PathVariable @Min(value = 1000, message = "{user.loginid.invalid}") @Max(value = 10000, message = "{user.loginid.invalid}") Integer loginId)  throws PaymentsException{  
-	//public ResponseEntity<user> getuserDetails(@PathVariable Integer userId) throws Exception {
-		UserDTO user = userService.getUser(loginId);
-		return new ResponseEntity<>(user, HttpStatus.OK);
-	}
+//	@GetMapping(value = "/users/{loginId}")
+//	public ResponseEntity<UserDTO> getuserDetails(@PathVariable @Min(value = 1000, message = "{user.loginid.invalid}") @Max(value = 10000, message = "{user.loginid.invalid}") Integer loginId)  throws PaymentsException{  
+//	//public ResponseEntity<user> getuserDetails(@PathVariable Integer userId) throws Exception {
+//		UserDTO user = userService.getUser(loginId);
+//		return new ResponseEntity<>(user, HttpStatus.OK);
+//	}
 
-	@PostMapping(value = "/users")
-	public ResponseEntity<String> adduser(@Valid @RequestBody UserDTO user) throws PaymentsException {
-		Integer loginId = userService.addUser(user);
-		String successMessage = environment.getProperty("API.INSERT_SUCCESS") + loginId;
-		return new ResponseEntity<>(successMessage, HttpStatus.CREATED);
-	}
+//	@PostMapping(value = "/users")
+//	public ResponseEntity<String> adduser(@Valid @RequestBody UserDTO user) throws PaymentsException {
+//		Integer loginId = userService.addUser(user);
+//		String successMessage = environment.getProperty("API.INSERT_SUCCESS") + loginId;
+//		return new ResponseEntity<>(successMessage, HttpStatus.CREATED);
+//	}
 
 	@PostMapping(value = "/login")
-	public ResponseEntity<String> lgoinUser(@Valid @RequestBody UserDTO user) throws PaymentsException {
-		Integer loginId = userService.loginUser(user);
-		String successMessage = environment.getProperty("API.LOGGED_IN") + loginId;
-		return new ResponseEntity<>(successMessage, HttpStatus.CREATED);
+	public ResponseEntity<String> loginUser(@Valid @RequestBody UserDTO user) throws PaymentsException {
+		return userService.loginUser(user);
+		
 	}
 
 //	@PutMapping(value = "/users/{userId}")
@@ -71,12 +70,12 @@ public class UserAPI {
 //		return new ResponseEntity<>(successMessage, HttpStatus.OK);
 //	}
 
-	@DeleteMapping(value = "/users/{loginId}")
-	public ResponseEntity<String> deleteuser(@PathVariable Integer loginId) throws PaymentsException {
-		userService.deleteUser(loginId);
-		String successMessage = environment.getProperty("API.DELETE_SUCCESS");
-		return new ResponseEntity<>(successMessage, HttpStatus.OK);
-	}
+//	@DeleteMapping(value = "/users/{loginId}")
+//	public ResponseEntity<String> deleteuser(@PathVariable Integer loginId) throws PaymentsException {
+//		userService.deleteUser(loginId);
+//		String successMessage = environment.getProperty("API.DELETE_SUCCESS");
+//		return new ResponseEntity<>(successMessage, HttpStatus.OK);
+//	}
 	
 	
 	

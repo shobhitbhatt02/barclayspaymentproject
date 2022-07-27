@@ -13,12 +13,12 @@ public class  MasterBiller {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer billerCode;
-	private Integer billerName;
+	private String billerName;
 	
-	public Integer getBillerName() {
+	public String getBillerName() {
 		return billerName;
 	}
-	public void setBillerName(Integer billerName) {
+	public void setBillerName(String billerName) {
 		this.billerName = billerName;
 	}
 	public Integer getBillerCode() {

@@ -6,22 +6,20 @@ public class RegisteredBillersDTO {
 	private Integer billerCode;
 	private String consumerNumber;
 	private Integer sequenceId;
-	private Integer autopay;
-	private Integer autopayLimit;
+	
 	
 	
 	public RegisteredBillersDTO() {
 		
 	}
-	public RegisteredBillersDTO(Integer billerSequenceId, Integer billerCode, String consumerNumber, Integer sequenceId,
-			Integer autopay, Integer autopayLimit) {
+	public RegisteredBillersDTO(Integer billerSequenceId, Integer billerCode, String consumerNumber, Integer sequenceId
+			) {
 		super();
 		this.billerSequenceId = billerSequenceId;
 		this.billerCode = billerCode;
 		this.consumerNumber = consumerNumber;
 		this.sequenceId = sequenceId;
-		this.autopay = autopay;
-		this.autopayLimit = autopayLimit;
+		
 	}
 	public Integer getBillerSequenceId() {
 		return billerSequenceId;
@@ -47,23 +45,13 @@ public class RegisteredBillersDTO {
 	public void setSequenceId(Integer sequenceId) {
 		this.sequenceId = sequenceId;
 	}
-	public Integer getAutopay() {
-		return autopay;
-	}
-	public void setAutopay(Integer autopay) {
-		this.autopay = autopay;
-	}
-	public Integer getAutopayLimit() {
-		return autopayLimit;
-	}
-	public void setAutopayLimit(Integer autopayLimit) {
-		this.autopayLimit = autopayLimit;
-	}
+	
+	
 	@Override
 	public String toString() {
 		return "RegisteredBillers [billerSequenceId=" + billerSequenceId + ", billerCode=" + billerCode
-				+ ", consumerNumber=" + consumerNumber + ", sequenceId=" + sequenceId + ", autopay=" + autopay
-				+ ", autopayLimit=" + autopayLimit + "]";
+				+ ", consumerNumber=" + consumerNumber + ", sequenceId=" + sequenceId + ", autopay="
+				+ ", autopayLimit="  + "]";
 	}
 	
 	

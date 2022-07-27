@@ -7,6 +7,9 @@ public class EmailDetails {
 	    private String attachment;
 	    
 	    
+		public EmailDetails() {
+			
+		}
 		public EmailDetails(String recipient, String msgBody, String subject, String attachment) {
 			super();
 			this.recipient = recipient;
