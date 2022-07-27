@@ -13,10 +13,10 @@
 	<artifactId>Demo02_SpringREST_Validation</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Demo_SpringREST_Validation_02</name>
-	<description>Demo project for Spring DATA Validation</description>
+	<description>Payment system</description>
 
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
 		<log4j2.version>2.17.1</log4j2.version>
 	</properties>
 
@@ -82,6 +82,16 @@
 		<dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-mail</artifactId>
+</dependency>
+<dependency>
+   <groupId>io.springfox</groupId>
+   <artifactId>springfox-swagger2</artifactId>
+   <version>2.7.0</version>
+</dependency>
+<dependency>
+   <groupId>io.springfox</groupId>
+   <artifactId>springfox-swagger-ui</artifactId>
+   <version>2.7.0</version>
 </dependency>
 	</dependencies>
 
